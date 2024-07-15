@@ -1355,45 +1355,7 @@ $productForAffiliate = $db->Product_model->getProductForAffiliate();
                 <?php if (($store['status'])) {
 
                   $share_url = ($store_slug) ? base_url($store_slug) : base_url('store/' . base64_encode($userdetails['id'])); ?>
-                  <div class=" border-custom show-tiny-link">
-                    <div class="form-group">
-                      <label class="form-label">
-                        <?= __('user.affiliate_store_url') ?>
-                      </label>
-
-                      <input type="text" readonly="readonly" value="<?= $share_url ?>"
-                        class="input-store-url-0 form-control">
-                    </div>
-                    <div class="flex align-items-center justify-content-end list-user-action">
-                      <a class="bt-all btn-success qrcode" href="javascript:void(0)" data-id="<?= $share_url ?>">
-                        <i class="fas fa-walkie-talkie"></i>
-                      </a>
-                      <a class="bt-all btn-warning target-share-link" href="<?= $share_url ?>" target="_blank">
-                        <span class="btn-inner">
-                          <i class="fa fa-share"></i>
-                        </span>
-                      </a>
-                      <a class="bt-all btn-warning" href="javascript:void(0)" copyToClipboard="<?= $share_url ?>"
-                        title="<?= __('user.copied'); ?>">
-                        <span class="btn-inner">
-                          <i class="far fa-copy" alt="<?= __('user.copy') ?>"></i>
-                        </span>
-                      </a>
-                      <a href="javascript:void(0)" class="bt-all btn-danger dashboard-model-slug" data-type="store"
-                        data-related-id="0" data-input-class="input-store-url-0">
-                        <span class="btn-inner">
-                          <i class="fas fa-cog" alt="<?= __('user.setting') ?>"></i>
-                        </span>
-                      </a>
-                      <a class="bt-all btn-success" href="javascript:void(0)" data-social-share
-                        data-share-url="<?= $share_url; ?>?id=<?= $userdetails['id'] ?>" data-share-title=""
-                        data-share-desc="">
-                        <span class="ms-1">
-                          <i class="fa-solid fa-share-from-square" alt="<?= __('user.share') ?>"></i>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
+                  
                   <?php if ($wallet >= $site_wallet['wallet_unlock_amount_affiliate'] || $product_id == 126) { ?>
                     <div class=" border-custom show-mega-link">
                       <div class="form-group">

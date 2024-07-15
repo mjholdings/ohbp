@@ -14813,7 +14813,7 @@ class Admincontrol extends MY_Controller {
 
 		$this->order->updateAllCommWallet(); // wallet
 
-		redirect(base_url('admincontrol/award_level'));
+		// redirect(base_url('admincontrol/award_level'));
 
 		// End Update
 	}
