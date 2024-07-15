@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reviews>
+  <review>
+    <rating_id>3</rating_id>
+    <products_id>38</products_id>
+    <firstname>Phương</firstname>
+    <lastname>Nguyễn Mai</lastname>
+    <rating_number>5</rating_number>
+    <rating_comments>Sản phẩm rất tốt</rating_comments>
+    <rating_created>2023-12-08 15:18:00</rating_created>
+  </review>
+</reviews>

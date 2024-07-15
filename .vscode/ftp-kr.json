@@ -1,0 +1,16 @@
+{
+    "host": "45.119.213.190",
+    "username": "ovancare@ohbp.com.vn",
+    "password": "nu7JUhxnZjeDak8BKKJH",
+    "remotePath": "/public_html/",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": false,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}
