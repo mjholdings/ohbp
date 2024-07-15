@@ -14,7 +14,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 | path to your installation.
 |
 */
-$config['base_url']  = 'https://ovanglobal.com/';/*
+$config['base_url']  = 'https://ohbp.com.vn/';/*
 
 
 //$config['base_url']  = 'https://example.com';/*

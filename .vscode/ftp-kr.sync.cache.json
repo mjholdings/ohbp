@@ -1,7 +1,7 @@
 {
-  "ftp://45.119.213.190@cybertech@ovanglobal.com": {
+  "ftp://45.119.213.190@ovancare@ohbp.com.vn": {
     "domains": {
-      "ovanglobal.com": {
+      "ohbp.com.vn": {
         "public_html": {
           ".gitignore": {
             "type": "-",
