@@ -568,4 +568,17 @@ class User_model extends MY_Model {
 		$this->db->insert('user_comission', $data);
 	}
 
+	// Hàm lấy danh sách toàn bộ Role
+	function mj_all_role($select = '*') {
+        $this->db->select($select);
+        $query = $this->db->get('users_role');
+        return $query->result();
+    }
+
+	// Hàm lấy danh sách toàn bộ Permission
+	function mj_all_permission($select = '*') {
+        $this->db->select($select);
+        $query = $this->db->get('users_permission');
+        return $query->result();
+    }
 }
