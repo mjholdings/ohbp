@@ -1,7 +1,7 @@
     <div class="content-body">
         <div class="card award-level">
             <div class="card-header bg-secondary text-white d-flex justify-content-between">
-                <h5><?= __('Khen thưởng') ?></h5>
+                <h5><?= __('Thêm vai trò') ?></h5>
                 <a id="toggle-uploader" href="<?= base_url('admincontrol/role') ?>" class="btn btn-sm btn-light">
                     <?= __('Quay lại') ?>
                 </a>
@@ -29,15 +29,19 @@
                             </div>
                             <p class="error-message"></p>
                         </div>
-                                        
+
                         <div class="mb-3">
                             <label class="form-label">
                                 <?= __('Danh sách phân quyền') ?>
                                 <span class="field-description" data-bs-toggle="tooltip" title="<?= __('Danh sách phân quyền') ?>"></span>
                             </label>
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="ids_permission" placeholder="<?= __('Danh sách phân quyền') ?>">
-                            </div>
+                            <?php foreach ($permissions as $permission) : ?>
+                                <div class="input-group" >
+                                    <input type="checkbox" name="permissions[]" value="<?php echo $permission['id']; ?>" />
+                                </div>
+                                <label class="form-label" for="permissions[]"><?php echo $permission['name']; ?></label><br />
+                            <?php endforeach; ?>
+
                             <p class="error-message"></p>
                         </div>
                     </div>

@@ -4057,6 +4057,8 @@ class Admincontrol extends MY_Controller {
 	public function create_role() {
 		$userdetails = $this->userdetails();
 		$data['CurrencySymbol'] = $this->currency->getSymbol();
+		$data['permissions'] = $this->user->get_permissions();
+
 
 		if ($this->input->method() == 'post') {
 			$result['status'] = 0;
@@ -4066,9 +4068,10 @@ class Admincontrol extends MY_Controller {
 			$this->form_validation->set_rules('name', __('Tên'), 'trim|required|max_length[100]');
 			$this->form_validation->set_rules('role', __('Vai trò'), 'trim|required');
 			if ($this->form_validation->run() == TRUE) {
+				$permissions = $this->input->post('permissions');
 				$insert['name'] = $this->input->post('name', true);
-				$insert['role'] = $this->input->post('role', true);
-				$insert['ids_permission'] = $this->input->post('ids_permission', true);
+				$insert['role'] = $this->input->post('role', true);				
+				$insert['ids_permission'] = implode(',', $permissions);
 				$success = true;
 
 				if ($success) {
@@ -4096,6 +4099,8 @@ class Admincontrol extends MY_Controller {
 			$id = (int) $id;
 			if ($id) {
 				$data['role'] = $this->Product_model->getByField('users_role', 'id', $id);
+				$data['permissions'] = $this->user->get_permissions();
+
 				if ($data['role']) {
 					$data['CurrencySymbol'] = $this->currency->getSymbol();
 
@@ -4107,9 +4112,11 @@ class Admincontrol extends MY_Controller {
 						$this->form_validation->set_rules('name', __('Tên'), 'trim|required');
 						$this->form_validation->set_rules('role', __('Vai trò'), 'trim|required');
 						if ($this->form_validation->run() == TRUE) {
+							$permissions = $this->input->post('permissions');
 							$update['name'] = $this->input->post('name', true);
 							$update['role'] = $this->input->post('role', true);
-							$update['ids_permission'] = $this->input->post('ids_permission', true);
+							$update['ids_permission'] = implode(',', $permissions);
+
 							$success = true;
 
 							if ($success) {

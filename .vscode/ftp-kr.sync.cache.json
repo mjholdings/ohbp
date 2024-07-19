@@ -84,8 +84,8 @@
           },
           "Admincontrol.php": {
             "type": "-",
-            "size": 564022,
-            "lmtime": 1721235123425,
+            "size": 571717,
+            "lmtime": 1721239373953,
             "modified": false
           },
           "Api.php": {
@@ -378,8 +378,8 @@
             "admin_user": {
               "form.php": {
                 "type": "-",
-                "size": 7750,
-                "lmtime": 1721235307076,
+                "size": 7745,
+                "lmtime": 1721240060955,
                 "modified": false
               },
               "index.php": {
@@ -410,7 +410,44 @@
             },
             "document": {},
             "form": {},
-            "includes": {},
+            "includes": {
+              "chat.php": {
+                "type": "-",
+                "size": 11763,
+                "lmtime": 0,
+                "modified": false
+              },
+              "footer.php": {
+                "type": "-",
+                "size": 22455,
+                "lmtime": 0,
+                "modified": false
+              },
+              "header.php": {
+                "type": "-",
+                "size": 34644,
+                "lmtime": 0,
+                "modified": false
+              },
+              "sidebar.php": {
+                "type": "-",
+                "size": 25045,
+                "lmtime": 1721242738836,
+                "modified": false
+              },
+              "store.php": {
+                "type": "-",
+                "size": 2559,
+                "lmtime": 0,
+                "modified": false
+              },
+              "topnav.php": {
+                "type": "-",
+                "size": 1212,
+                "lmtime": 0,
+                "modified": false
+              }
+            },
             "integration": {},
             "language": {},
             "mails": {},
@@ -439,6 +476,46 @@
                 "type": "-",
                 "size": 5354,
                 "lmtime": 1720705836932,
+                "modified": false
+              }
+            },
+            "role": {
+              "create.php": {
+                "type": "-",
+                "size": 4480,
+                "lmtime": 1721239163929,
+                "modified": false
+              },
+              "index.php": {
+                "type": "-",
+                "size": 3133,
+                "lmtime": 1721236557606,
+                "modified": false
+              },
+              "update.php": {
+                "type": "-",
+                "size": 4964,
+                "lmtime": 1721239257289,
+                "modified": false
+              }
+            },
+            "role copy": {
+              "create.php": {
+                "type": "-",
+                "size": 4570,
+                "lmtime": 1721238063958,
+                "modified": false
+              },
+              "index.php": {
+                "type": "-",
+                "size": 3133,
+                "lmtime": 1721236557606,
+                "modified": false
+              },
+              "update.php": {
+                "type": "-",
+                "size": 5165,
+                "lmtime": 1721238001664,
                 "modified": false
               }
             },
@@ -479,23 +556,23 @@
             "usergroup": {},
             "users": {},
             "withdrawal_payment": {},
-            "role": {
+            "permission": {
               "create.php": {
                 "type": "-",
-                "size": 4599,
-                "lmtime": 1721236709126,
+                "size": 4473,
+                "lmtime": 1721239174348,
                 "modified": false
               },
               "index.php": {
                 "type": "-",
-                "size": 3133,
-                "lmtime": 1721236557606,
+                "size": 3289,
+                "lmtime": 1721238566237,
                 "modified": false
               },
               "update.php": {
                 "type": "-",
-                "size": 5231,
-                "lmtime": 1721236852176,
+                "size": 4756,
+                "lmtime": 1721239199391,
                 "modified": false
               }
             }
@@ -612,8 +689,8 @@
           },
           "Product_model.php": {
             "type": "-",
-            "size": 220287,
-            "lmtime": 1721235149870,
+            "size": 221313,
+            "lmtime": 1721240387642,
             "modified": false
           },
           "Report_model.php": {
@@ -678,8 +755,8 @@
           },
           "User_model.php": {
             "type": "-",
-            "size": 19918,
-            "lmtime": 1721235202344,
+            "size": 20140,
+            "lmtime": 1721239435580,
             "modified": false
           },
           "Version_changes_model.php": {

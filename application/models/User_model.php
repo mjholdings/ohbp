@@ -569,16 +569,26 @@ class User_model extends MY_Model {
 	}
 
 	// Hàm lấy danh sách toàn bộ Role
-	function mj_all_role($select = '*') {
+	public function mj_all_role($select = '*') {
         $this->db->select($select);
         $query = $this->db->get('users_role');
         return $query->result();
     }
 
 	// Hàm lấy danh sách toàn bộ Permission
-	function mj_all_permission($select = '*') {
+	public function mj_all_permission($select = '*') {
         $this->db->select($select);
         $query = $this->db->get('users_permission');
         return $query->result();
+    }
+
+	// Hàm lấy permission toàn bộ hoặc theo  id
+	public function get_permissions($id = FALSE) {
+        if ($id === FALSE) {
+            $query = $this->db->get('users_permission');
+            return $query->result_array();
+        }
+        $query = $this->db->get_where('users_permission', array('id' => $id));
+        return $query->row_array();
     }
 }
